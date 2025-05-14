@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>塔罗牌占卜</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>塔罗牌占卜</h1>
+        
+        <div class="spread-selection">
+            <h2>选择牌阵</h2>
+            <div class="spread-buttons">
+                <button class="spread-btn active" data-spread="single">
+                    <div class="spread-icon">🃏</div>
+                    <div class="spread-name">单张牌阵</div>
+                    <div class="spread-desc">简单问题的指引</div>
+                </button>
+                <button class="spread-btn" data-spread="three">
+                    <div class="spread-icon">🃏🃏🃏</div>
+                    <div class="spread-name">三张牌阵</div>
+                    <div class="spread-desc">过去、现在、未来</div>
+                </button>
+                <button class="spread-btn" data-spread="celtic">
+                    <div class="spread-icon">✝</div>
+                    <div class="spread-name">凯尔特十字阵</div>
+                    <div class="spread-desc">深入分析复杂问题</div>
+                </button>
+            </div>
+            <button id="startReading" class="start-btn">开始占卜</button>
+        </div>
+
+        <div class="reading-area">
+            <div id="cardsContainer" class="cards-container"></div>
+            <div id="interpretation" class="interpretation"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
